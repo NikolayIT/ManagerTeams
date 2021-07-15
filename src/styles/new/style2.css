@@ -1,0 +1,1316 @@
+body {
+	background: url(images/bck_pattern.jpg) repeat-x;
+	background-color: #2D4058;
+	color: #000000;
+	font-family: Verdana;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+table.main {
+	border: 0;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 950px;
+}
+
+a {
+	color: #0056A4;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #118EFF;
+	text-decoration: none;
+}
+
+a img {
+	border: 0;
+}
+
+a:visited {
+	color: #0056A4;
+}
+
+a:visited :hover {
+	color: #118EFF;
+	text-decoration: none;
+}
+
+.sep {
+	background-image: url('images/mt_home_menu_divider.jpg');
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 1px;
+}
+
+#header_line {
+	background-image: url('images/header_pattern.jpg');
+	background-repeat: repeat-x;
+}
+
+#left_header {
+	background-image: url('images/mt_home_header_left.jpg');
+	background-repeat: no-repeat;
+	width: 14px;
+}
+
+#header {
+	background-image: url('images/header_pattern.jpg');
+	background-repeat: repeat-x;
+}
+
+#language {
+	color: #2D4058;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#lang {
+	color: #2D4058;
+	font-size: 10px;
+}
+
+#small_nav {
+	float: right;
+	font-size: 11px;
+	vertical-align: bottom;
+	width: 500px;
+}
+
+#right_header {
+	background-image: url('images/mt_home_header_right.jpg');
+	background-repeat: no-repeat;
+	width: 14px;
+}
+
+#left_menu_corner {
+	background-image: url('images/mt_home_menu_left.png');
+	background-repeat: no-repeat;
+	border-top: 1px #000 solid;
+	height: 34px;
+	width: 14px;
+}
+
+#right_menu_corner {
+	background-image: url('images/mt_home_menu_right.jpg');
+	background-repeat: no-repeat;
+	border-top: 1px #000 solid;
+	width: 14px;
+}
+
+td {
+	border-color: #4b4b4b;
+	font-size: 9px;
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+	float: left;
+}
+
+td.menu {
+	background-color: #000000;
+	font-size: 9px;
+	padding-left: 0;
+	text-align: left;
+}
+
+#f_player_left {
+	background: url('images/mt_home_header_footbal1.jpg') no-repeat;
+	height: 100px;
+}
+
+#f_player_right {
+	background: url('images/mt_home_header_footbal5.jpg') no-repeat;
+	height: 100px;
+}
+
+.login_line_header {
+	background: url('images/mt_home_login_line2.jpg') repeat-x;
+	background-color: #000;
+	height: 34px;
+}
+
+.login_line_header a {
+	color: #FFFF00;
+}
+
+#login_title {
+	color: #FFFFFF;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.login {
+	float: right;
+	margin-left: 0;
+	margin-right: 5px;
+	margin-top: -22px;
+}
+
+.login input,.btn,button,.invite input,input.submit,input.reset {
+	background: url(images/login_button.jpg) repeat-x;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	height: 17px;
+	margin-top: 5px;
+	padding: 0 5px 15px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.btn {
+	float: left;
+	margin-right: 3px;
+}
+
+input.submit {
+	float: none;
+	margin-bottom: 2px;
+	margin-top: 0;
+}
+
+.invite input {
+	float: none;
+	padding-bottom: 5px;
+}
+
+.login input {
+	float: none;
+	margin-top: 0;
+	padding: 0 5px 5px;
+}
+
+#login_box {
+	_padding-top: 10px;
+	_width: 203px;
+	background: url(images/login_pattern.jpg) repeat-x;
+	border-right: 1px #95C0DF solid;
+	color: #000;
+	font-family: Verdana;
+	font-size: 10px;
+	height: 136px;
+	width: 202px;
+}
+
+#login_inside {
+	_padding-top: 0;
+	margin-left: 15px;
+	padding-top: 10px;
+}
+
+#login_box a {
+	color: #0056A4;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+.username {
+	border: 1px #3F7896 solid;
+	height: 19px;
+	margin-bottom: 3px;
+	margin-top: 2px;
+	padding-left: 5px;
+	width: 100px;
+}
+
+.password {
+	border: 1px #3F7896 solid;
+	height: 19px;
+	margin-bottom: 3px;
+	margin-top: 2px;
+	padding-left: 5px;
+	width: 100px;
+}
+
+.remember {
+	_margin-left: -3px;
+	border: 0;
+	margin-left: 1px;
+}
+
+.forgotten_password {
+	_margin-left: 0;
+	_margin-top: -10px;
+	margin-left: 0;
+}
+
+#signup_title {
+	background: url(images/sign_up1.jpg) no-repeat;
+	border: 0 #000 solid;
+	height: 41px;
+	vertical-align: bottom;
+	width: 203px;
+}
+
+.signupsubmit {
+	background: url(images/sign_up2.jpg) no-repeat;
+	border: 0;
+	cursor: pointer;
+	height: 52px;
+	vertical-align: top;
+	width: 203px;
+}
+
+#signup_inside {
+	_margin-top: -19px;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+#invite_title {
+	background: url(images/invite_friends2.jpg) repeat-x;
+	color: #ffffff;
+	font: 12px Verdana;
+	font-weight: bold;
+}
+
+#invite_jpg {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+#invite_box {
+	_margin-top: -20px;
+	background-color: #C5C5C5;
+	color: #000;
+	font-size: 10px;
+	line-height: 15px;
+	margin-bottom: 0;
+	margin-top: -9px;
+	width: 203px;
+}
+
+#invite_forms {
+	_padding-top: 0;
+	padding: 15px 0 15px 15px;
+	vertical-align: top;
+}
+
+#frname {
+	width: 165px;
+}
+
+#fremail {
+	width: 165px;
+}
+
+#inviter {
+	width: 165px;
+}
+
+#mailer {
+	width: 165px;
+}
+
+INPUT {
+	border: 1px #3F7896 solid;
+}
+
+input[type='checkbox'] {
+	border: 0;
+}
+
+input.checkbox {
+	_border: 0;
+	vertical-align: middle;
+}
+
+input.radio {
+	_border: 0;
+}
+
+#rules1 {
+	border: 0;
+}
+
+#rules2 {
+	border: 0;
+}
+
+SELECT {
+	border: 1px #3F7896 solid;
+}
+
+#content {
+	background-color: #95C0DF;
+	border-left: 1px #2D4058 solid;
+	font: 11px Verdana;
+	min-height: 100%;
+	padding: 8px 8px;
+	width: 730px;
+}
+
+#content_td {
+	background-color: #95C0DF;
+	height: 100%;
+	vertical-align: top;
+	width: 740px;
+}
+
+.bold_text {
+	font-weight: bold;
+}
+
+.content_title {
+	background: url(images/content_title.jpg) no-repeat;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding-left: 20px;
+}
+
+h2 {
+	background: url(images/content_title.jpg) no-repeat;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+th {
+	border-top: 1px #0056A4 dotted;
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px;
+	text-align: right;
+	white-space: nowrap;
+}
+
+input.submit_button {
+	background: url(images/submit_button.jpg) no-repeat;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	height: 19px;
+	margin-right: 250px;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	width: 70px;
+}
+
+.specialtb {
+	border: 0;
+	border-top: 1px #0056A4 dotted;
+	color: #fff;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+	padding: 7px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table.specialtable td.specialtb {
+	color: #2D4058;
+}
+
+td.specialtb input {
+	width: 170px;
+}
+
+td.specialtb select {
+	width: 170px;
+}
+
+td.specialtb a {
+	color: #0056A4;
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight: normal;
+}
+
+table.specialtable {
+	border-collapse: collapse;
+	empty-cells: show;
+	padding: 0;
+	width: 600px;
+}
+
+a.content_link {
+	color: #0056A4;
+	font-weight: bold;
+}
+
+table.specialtable table td.specialtb {
+	border-top: 0 #0056A4 dotted;
+	text-align: right;
+}
+
+table.specialtable table th {
+	border-top: 0 #0056A4 dotted;
+	padding-left: 4px;
+	padding-right: 1px;
+}
+
+input.invite_reset {
+	background: url(images/submit_button.jpg) no-repeat;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	font-family: Verdana;
+	font-size: 11px;
+	font-weight: bold;
+	height: 19px;
+	padding-bottom: 2px;
+	text-transform: uppercase;
+	width: 70px;
+}
+
+.copyright {
+	color: #95C0DF;
+	font-family: Tahoma;
+	font-weight: normal;
+	text-align: left;
+}
+
+.by {
+	color: #BFD9EC;
+}
+
+#footer {
+	float: right;
+	font-family: Verdana;
+	font-size: 10px;
+}
+
+#footer a {
+	color: #BFD9EC;
+}
+
+#news_box {
+	background: #BFD9EC;
+	color: #4b4b4b;
+	float: left;
+	font-size: 12px;
+	margin-bottom: 15px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 5px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	vertical-align: top;
+	width: 100%;
+}
+
+#news_title {
+	background: url(images/news_cat.jpg) no-repeat;
+	color: #00194C;
+	font: 14px Verdana;
+	font-weight: bold;
+	margin-left: 10px;
+	padding-left: 20px;
+	padding-top: 1px;
+	text-transform: uppercase;
+	vertical-align: bottom;
+}
+
+#news_content {
+	font-family: Verdana;
+	font-size: 11px;
+	margin-left: 15px;
+	margin-top: 10px;
+	overflow: auto;
+}
+
+#news_content A {
+	color: #0056A4;
+}
+
+.dotted_paragraph {
+	border-bottom: 1px #0056A4 dotted;
+	font-family: Verdana;
+	font-size: 12px;
+}
+
+h3 {
+	font-family: Verdana;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.italic_text {
+	font-style: italic;
+	font-weight: bold;
+}
+
+ul#navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation li {
+	background-color: #000000;
+	float: left;
+	margin: 0;
+	position: relative;
+}
+
+#navigation li a {
+	_float: left;
+	color: #fff;
+	display: block;
+	font: 12px Verdana;
+	font-weight: bold;
+	height: 33px;
+	line-height: 2em;
+	padding: 0 20px;
+	text-align: left;
+	text-decoration: none;
+}
+
+#navigation li a:hover {
+	background: url(images/mt_home_menu_item_bck_hover.jpg) repeat-x;
+}
+
+#navigation ul:after {
+	clear: both;
+	content: " ";
+	display: block;
+}
+
+ul#navigation ul {
+	_padding-left: 0;
+	background-color: #38506F;
+	border: 1px #000 solid;
+	display: none;
+	left: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 33px;
+	width: 160px;
+}
+
+ul#navigation ul li {
+	background-color: #38506F;
+	position: relative;
+	white-space: nowrap;
+	width: 160px;
+}
+
+ul#navigation li ul li a {
+	font-weight: normal;
+	height: 23px;
+}
+
+ul#navigation li ul li a:hover {
+	background: none;
+}
+
+ul#navigation li ul li:hover {
+	background-color: #348DC9;
+}
+
+ul#navigation li ul li ul {
+	display: none;
+	left: 160px;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	white-space: nowrap;
+}
+
+ul#navigation li:hover ul {
+	display: block;
+}
+
+ul#navigation li:hover ul li ul {
+	display: none;
+}
+
+ul#navigation li.sub_over ul {
+	display: block;
+}
+
+ul#navigation li.sub_over ul li ul {
+	display: none;
+}
+
+ul#navigation li ul li:hover ul {
+	display: block;
+}
+
+ul#navigation li ul li.over ul {
+	display: block;
+}
+
+* html ul#navigation li ul li {
+	float: left;
+	height: 1%;
+}
+
+* html ul#navigation li ul li a {
+	height: 1%;
+}
+
+#nrpg {
+	_padding-bottom: 30px;
+	color: #000;
+	line-height: 20px;
+	padding: 10px 0 20px 10px;
+}
+
+#nrpg_box {
+	_padding-top: 10px;
+	_width: 203px;
+	background-color: #C2C2C2;
+	border-right: 1px #95C0DF solid;
+	color: #000;
+	font-family: Verdana;
+	font-size: 10px;
+	width: 202px;
+}
+
+#nrpg_team {
+	_width: 202px;
+	background: url(images/mt_nrpg_team_pattern.jpg) repeat-x;
+	color: #ffffff;
+	font: 12px Verdana;
+	font-weight: bold;
+	width: 203px;
+}
+
+table.content_tables td {
+	padding: 10px;
+}
+
+table.specialtable_login {
+	background-color: #fff;
+	border: 1px #fff solid;
+	border-collapse: collapse;
+	border-spacing: 1px;
+	margin: 1px;
+	padding: 1px;
+}
+
+#player_info {
+	background-color: #FFFFFF;
+	border: 1px #000000 solid;
+	margin: 2px;
+	padding: 2px;
+	font: 10px Verdana;
+}
+
+#player_info table {
+	background-color: #FFFFFF;
+	border: 1px #000000 solid;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+table.specialtable_login th {
+	background-color: #C6DDEE;
+	border: 1px #fff solid;
+	font: 11px Verdana;
+	padding: 2px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+table.specialtable_login th.tt {
+	background-color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+
+table.specialtable_login td {
+	border: 1px #fff solid;
+}
+
+table.specialtable_login td.tb {
+	background-color: #B1D7F2;
+	font: 11px Verdana;
+	padding: 5px 2px 2px 5px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table.specialtable_login td.tbwhite {
+	background-color: #FFFFFF;
+	font: 11px Verdana;
+	padding: 5px 2px 2px 5px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table.specialtable_login th.thwhite {
+	background-color: #FFFFFF;
+	border: 1px #fff solid;
+	font: 11px Verdana;
+	padding: 2px;
+	text-align: center;
+	white-space: nowrap;
+}
+
+table.specialtable_login td.tb2 {
+	background-color: #80CF97;
+	font: 11px Verdana;
+	padding: 5px 2px 2px 5px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table.specialtable_login td.tb3 {
+	background-color: #F2B1C9;
+	font: 11px Verdana;
+	padding: 5px 2px 2px 5px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table.specialtable_login td.tbwrap {
+	background-color: #B1D7F2;
+	font: 11px Verdana;
+	padding: 5px 2px 2px 5px;
+	text-align: left;
+	white-space: normal;
+}
+
+table.specialtable_login td.tbnc {
+	font: 11px Verdana;
+	padding: 5px 2px 2px 5px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+table.specialtable_login td.tb a {
+	white-space: nowrap;
+}
+
+.powerbar {
+	height: 8px;
+	background-color: #0A0A0A;
+	border: 1px solid;
+	border-color: #777 #222 #222 #777;
+	margin: 2px 0;
+}
+
+.powerbarfill {
+	height: 8px;
+	background-color: #1C6BAD;
+	font-size: 0;
+	margin: 0;
+}
+
+TD.e {
+	white-space: normal;
+}
+
+div.playerfigure {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+div.playerfigure:hover {
+	color: #118EFF;
+	text-decoration: none;
+}
+
+div.playername {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+div.playername:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#formation_field {
+	background: url(field.gif) 0 50%;
+	height: 900px;
+	position: absolute;
+	width: 600px;
+}
+
+.player {
+	position: absolute;
+	width: 100px;
+}
+
+.player select {
+	left: -18px;
+	position: absolute;
+	top: 83px;
+}
+
+.playername a {
+	color: #118EFF;
+	text-decoration: none;
+}
+
+.playername {
+	border: 1px solid #999999;
+	text-align: center;
+	width: 99px;
+}
+
+.playername div {
+	padding-top: 1px;
+}
+
+.playerfigure {
+	border: 1px solid transparent;
+	font-size: 10px;
+	height: 82px;
+	text-align: center;
+	width: 100px;
+}
+
+.position_keeper .playerfigure {
+	background: url(player_keeper.gif) no-repeat 50% 0;
+}
+
+.position_keeper .playerfigure div {
+	margin: 35px 38px 0 43px;
+}
+
+.position_keeper .playername {
+	background-color: #FF8C00;
+}
+
+.selected_keeper .playerfigure div {
+	background-color: #FF8C00;
+}
+
+.position_defender .playerfigure {
+	background: url(player_defender.gif) no-repeat 50% 0;
+}
+
+.position_defender .playerfigure div {
+	margin: 51px 51px 23px 30px;
+}
+
+.position_defender .playername {
+	background-color: #B86000;
+}
+
+.selected_defender .playerfigure div {
+	background-color: #B86000;
+}
+
+.position_midfielder .playerfigure {
+	background: url(player_midfielder.gif) no-repeat 50% 0;
+}
+
+.position_midfielder .playerfigure div {
+	margin: 28px 39px 0 42px;
+}
+
+.position_midfielder .playername {
+	background-color: #B03060;
+}
+
+.selected_midfielder .playerfigure div {
+	background-color: #B03060;
+}
+
+.position_striker .playerfigure {
+	background: url(player_striker.gif) no-repeat 50% 0;
+}
+
+.position_striker .playerfigure div {
+	margin: 28px 37px 0 44px;
+}
+
+.position_striker .playername {
+	background-color: #0000FF;
+}
+
+.selected_striker .playerfigure div {
+	background-color: #0000FF;
+}
+
+.position_bench .playerfigure {
+	background: url(player_bench.gif) no-repeat 50% 0;
+}
+
+.position_bench .playerfigure div {
+	margin: 50px 12px 0 69px;
+}
+
+.position_bench .playername {
+	background-color: #333333;
+}
+
+.selected_bench .playerfigure div {
+	background-color: #333333;
+}
+
+.img_plain_yes {
+	background: url(plain_yes.gif);
+	height: 11px;
+	width: 12px;
+}
+
+.img_plain_no {
+	background: url(plain_no.gif);
+	height: 11px;
+	width: 12px;
+}
+
+.statistics_yellow {
+	background: url(statistics_yellow.gif);
+	height: 20px;
+	width: 18px;
+}
+
+.statistics_red {
+	background: url(statistics_red.gif);
+	height: 20px;
+	width: 18px;
+}
+
+.img_player_car {
+	background: url(player_car.gif);
+	height: 16px;
+	width: 20px;
+}
+
+.img_player_house {
+	background: url(player_house.gif);
+	height: 22px;
+	width: 20px;
+}
+
+.img_player_locked_league {
+	background: url(player_lockedleague.gif) no-repeat;
+	height: 23px;
+	width: 18px;
+}
+
+.img_player_locked_cup {
+	background: url(player_lockedcup.gif) no-repeat;
+	height: 23px;
+	width: 18px;
+}
+
+.statistics_goal {
+	background: url(statistics_goal.gif);
+	height: 20px;
+	width: 20px;
+}
+
+.statistics_injuries {
+	background: url(player_injured.gif);
+	height: 20px;
+	width: 20px;
+}
+
+.img_player_injured {
+	background: url(player_injured.gif) no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.img_unread_message {
+	background: url(mail_unopened.gif);
+	height: 17px;
+	width: 21px;
+}
+
+.img_player_transfer {
+	background: url(player_transfer.gif);
+	height: 19px;
+	width: 22px;
+}
+
+.img_match_change {
+	background: url(match_change.gif);
+	height: 17px;
+	width: 18px;
+}
+
+.img_match_form {
+	background: url(match_form.gif);
+	height: 18px;
+	width: 19px;
+}
+
+.img_match_second_yellow {
+	background: url(match_second_yellow.gif);
+	height: 16px;
+	width: 17px;
+}
+
+#specialtext {
+	color: #FFFFFF;
+	display: inline;
+	font-size: 9px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+#new_messages {
+	background-color: #FF0000;
+	color: #000000;
+	border: 1px;
+	margin: 10;
+	padding: 10;
+}
+
+#new_messages_td a {
+	color: #000000;
+}
+
+#footer_outer_wrapper {
+	bottom: 0px;
+	height: 65px;
+	position: fixed;
+	right: 0px;
+	width: 100%;
+	z-index: 300;
+}
+
+#footer_inner_wrapper {
+	height: 65px;
+	left: 50%;
+	margin-left: -475px;
+	position: absolute;
+	top: 0pt;
+	width: 950px;
+	z-index: 1;
+}
+
+#footer_background {
+	background-image: url("bgtop-vote.png");
+	background-position: right top;
+	background-repeat: no-repeat;
+	height: 65px;
+	position: absolute;
+	top: 0pt;
+	width: 950px;
+	z-index: 2;
+}
+
+.cl {
+	background: url('trophies/cl.gif') no-repeat;
+	padding-left: 33px;
+	padding-top: 51px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 0px 2px 0px 0px;
+}
+
+.cup {
+	background: url('trophies/cup_mt.gif') no-repeat;
+	padding-left: 33px;
+	padding-top: 51px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 0px 2px 0px 0px;
+}
+
+.league_A {
+	background: url('trophies/cup_a.gif') no-repeat;
+	padding-left: 33px;
+	padding-top: 51px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 0px 2px 0px 0px;
+}
+
+.league_B {
+	background: url('trophies/cup_b.gif') no-repeat;
+	padding-left: 29px;
+	padding-top: 40px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 11px 2px 0px 0px;
+}
+
+.league_C {
+	background: url('trophies/cup_c.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_D {
+	background: url('trophies/cup_d.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_E {
+	background: url('trophies/cup_e.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_F {
+	background: url('trophies/cup_f.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_G {
+	background: url('trophies/cup_g.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_H {
+	background: url('trophies/cup_h.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_I {
+	background: url('trophies/cup_i.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_J {
+	background: url('trophies/cup_j.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_K {
+	background: url('trophies/cup_k.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.league_L {
+	background: url('trophies/cup_l.gif') no-repeat;
+	padding-left: 25px;
+	padding-top: 34px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 17px 2px 0px 0px;
+}
+
+.img_cup_10 {
+	background: url('trophies/box_10.gif') no-repeat;
+	padding-left: 41px;
+	padding-top: 30px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 21px 2px 0px 0px;
+}
+
+.img_cup_20 {
+	background: url('trophies/box_20.gif') no-repeat;
+	padding-left: 41px;
+	padding-top: 30px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 21px 2px 0px 0px;
+}
+
+.img_cup_50 {
+	background: url('trophies/box_50.gif') no-repeat;
+	padding-left: 41px;
+	padding-top: 30px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 21px 2px 0px 0px;
+}
+
+.img_cup_100 {
+	background: url('trophies/box_100.gif') no-repeat;
+	padding-left: 41px;
+	padding-top: 30px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 21px 2px 0px 0px;
+}
+
+.img_cup_500 {
+	background: url('trophies/box_500.gif') no-repeat;
+	padding-left: 41px;
+	padding-top: 30px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 21px 2px 0px 0px;
+}
+
+.friendly {
+	background: url('trophies/cup_friendly.gif') no-repeat;
+	padding-left: 16px;
+	padding-top: 22px;
+	width: 0px;
+	height: 0px;
+	float: left;
+	margin: 29px 2px 0px 0px;
+}
+.clear {
+	clear: both;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width: 0;
+}

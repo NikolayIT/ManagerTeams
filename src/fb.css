@@ -1,0 +1,13 @@
+body {
+	color: #000000;
+}
+.fan_box .full_widget {
+	border:1px solid #FFFFFF;
+}
+.connections {
+	background-color: #B1D7F2;
+}
+.fan_box .full_widget .connect_top {
+	background-color: #C6DDEE;
+	border-bottom:1px solid #FFFFFF;
+}

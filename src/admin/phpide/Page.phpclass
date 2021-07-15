@@ -1,0 +1,146 @@
+<?php
+/*******************************************************************************\
+*    IDE.PHP, a web based editor for quick PHP development                     *
+*    Copyright (C) 2000  Johan Ekenberg                                        *
+*                                                                              *
+*    This program is free software; you can redistribute it and/or modify      *
+*    it under the terms of the GNU General Public License as published by      *
+*    the Free Software Foundation; either version 2 of the License, or         *
+*    (at your option) any later version.                                       *
+*                                                                              *
+*    This program is distributed in the hope that it will be useful,           *
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of            *
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             *
+*    GNU General Public License for more details.                              *
+*                                                                              *
+*    You should have received a copy of the GNU General Public License         *
+*    along with this program; if not, write to the Free Software               *
+*    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA *
+*                                                                              *
+*    To contact the author regarding this program,                             *
+*    please use this email address: <ide.php@ekenberg.se>                      *
+\*******************************************************************************/
+
+class Page {
+   var $Bgcolor		= "#FFE56A";
+   var $Box_bgcolor	= "#FFFFDD";
+   var $Link_color	= "#0A0AA0";
+   var $Alink_color	= "#0000CC";
+   var $Vlink_color	= "#464686";
+
+function html_top() {
+   $ret = "";
+   $ret .= "<HTML><HEAD>\n";
+   $ret .= "<TITLE>I D E . P H P</TITLE>\n";
+   $ret .= "{$this->CSS_code}\n";
+   $ret .= "{$this->JS_code}\n";
+   $ret .= "</HEAD>\n";
+   $ret .= "<BODY BGCOLOR='{$this->Bgcolor}' LINK='{$this->Link_color}' ALINK='{$this->Alink_color}' VLINK='{$this->Vlink_color}' onUnload='closeCodeWindow()'>\n";
+   return ($ret);
+}
+
+function html_bottom() {
+   return "</BODY></HTML>\n";
+}
+
+function begin_invisible_table($width, $attr="") {
+   $ret  = "<TABLE WIDTH='$width' BORDER='0' ";
+   $ret .= (is_array($attr) ? join(" ", $attr) : NULL) . ">\n";
+   return ($ret);
+}
+
+function end_invisible_table() {
+   $ret = "</TABLE>\n";
+   return ($ret);
+}
+
+function start_box_table($attr="") {
+   $ret .= "<TABLE BORDER='0' CELLPADDING='0' CELLSPACING='0' BGCOLOR='#000000' ALIGN='center' ";
+   $ret .= (is_array($attr) ? join(" ", $attr) : NULL) . ">\n";
+   $ret .= "<TR><TD>\n";
+   $ret .= "<TABLE BORDER='0' CELLPADDING='3' CELLSPACING='1' BGCOLOR='#000000' ALIGN='center' WIDTH='100%'>\n";
+   return ($ret);
+}
+
+function end_box_table() {
+   $ret .= "</TABLE></TD></TR></TABLE>\n";
+   return ($ret);
+}
+
+function info_box($width, $content) {
+   $ret .= $this->start_box_table(array("WIDTH='$width'"));
+   $ret .= "<TR BGCOLOR='{$this->Box_bgcolor}'><TD>\n";
+   $ret .= $this->begin_invisible_table("100%", array("CELLPADDING='10'", "CELLSPACING='0'", "ALIGN='center'", "BGCOLOR='{$this->Box_bgcolor}'"));
+   $ret .= "<TR><TD CLASS='netscapesucks'>\n";
+   $ret .= $content;
+   $ret .= "</TD></TR></TABLE>\n";
+   $ret .= "</TD></TR>\n";
+   $ret .= $this->end_box_table();
+   return($ret);
+}
+
+function Page() {
+   $this->CSS_code = "
+   <STYLE TYPE='text/css'>
+   <!--
+   A {
+      text-decoration: none;
+   }
+   A:HOVER {
+      color: {$this->Alink_color};
+   }
+   BODY,INPUT {
+      font-family: Arial, 'MS Sans Serif', Helvetica;
+   }
+   INPUT {
+      font-size: 9pt;
+   }
+   H2,H4,P {
+      font-family: Verdana,Geneva,Arial,Helvetica;
+   }
+   H2 {
+      font-size: 20pt;
+      font-weight: 500;
+   }
+   H4 {
+      font-size: 14pt;
+      font-style: Italic;
+      font-weight: 500;
+      margin-left: 20pt;
+   }
+   P {
+      font-size: 10pt;
+      text-indent: 10pt;
+      margin-left: 10pt;
+      margin-right: 15pt;
+   }
+   P.indentall {
+      text-indent: 0pt;
+      margin-left: 20pt;
+   }
+   P.noindent {
+      text-indent: 0pt;
+      margin-left: 0pt;
+   }
+   .netscapesucks {
+      font-family: Arial, 'MS Sans Serif', Helvetica;
+      font-size: 11pt;
+   }
+   .netscapesucks2 {
+      font-family: monospace;
+      font-size: 9pt;
+   }
+   -->
+   </STYLE>\n";
+
+   $this->JS_code = "
+   <SCRIPT LANGUAGE='JavaScript'>
+   function closeCodeWindow() {
+      if (typeof(eval_window) == 'object') {
+         eval_window.close();
+      }
+   }
+   </SCRIPT>\n";
+}
+
+}?>

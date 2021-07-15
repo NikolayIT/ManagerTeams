@@ -1,0 +1,672 @@
+		body{
+			background: url(images/bck_pattern.jpg) repeat-x;
+			background-color:#2D4058;
+			color: #000000;
+			margin: 0px;
+			padding: 0px;
+			font-family:Verdana;
+			font-size:12px;
+		}
+		table.main{
+			border:0px; 
+			width:950px;
+			margin: 0px;
+			padding: 0px;
+			border-collapse: collapse;
+		}
+		a{
+				color:#0056A4;
+		}
+		a:hover{
+			color:#118EFF;
+			text-decoration:none;
+		}
+		.sep{
+			background-image:url('images/mt_home_menu_divider.jpg');
+			background-repeat:no-repeat;
+			height:32px;
+			width:1px;
+		}
+		#header_line{
+			background-image:url('images/header_pattern.jpg');
+			background-repeat:repeat-x;
+		}
+		
+		#left_header{
+			background-image:url('images/mt_home_header_left.jpg');
+			background-repeat:no-repeat;
+			width:14px;
+		}
+	  
+		#header{
+			background-image:url('images/header_pattern.jpg');
+			background-repeat:repeat-x;
+		}
+		
+		#language{
+			color:#2D4058;
+			font-size:10px;
+			font-weight:bold;
+			text-transform:uppercase;
+		}
+		
+		#lang{
+			color:#2D4058;
+			font-size:10px;
+		}
+		
+		#small_nav{
+			font-size:11px;
+			float:right;
+			width:300px; 
+			vertical-align:bottom;
+		}
+		
+		#right_header{
+			background-image:url('images/mt_home_header_right.jpg');
+			background-repeat:no-repeat;
+			width:14px;
+		}
+		
+		#left_menu_corner{
+			background-image:url('images/mt_home_menu_left.jpg');
+			background-repeat:no-repeat;
+			width:14px;
+			border-top:1px #000 solid;
+			height:34px;
+		}
+		
+		#right_menu_corner{
+			background-image:url('images/mt_home_menu_right.jpg');
+			background-repeat:no-repeat;
+			border-top:1px #000 solid;
+			width:14px;
+		}
+		
+	  		td {
+				font-size: 9px;
+				border-color: #4b4b4b;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			#logo{
+				float:left;
+			}
+			
+			td.menu {
+					font-size: 9px;
+					text-align: left;
+					padding-left: 0px;
+					background-color:#000000;
+			}
+			
+				
+		#f_player_left{
+			background: url(images/mt_home_header_footbal1.jpg)  no-repeat ;
+			height:100px;
+		}	
+		
+		#f_player_right{
+			background: url(images/mt_home_header_footbal5.jpg)  no-repeat ;
+			height:100px;
+		}	
+		
+		.login_line_header{
+			background: url('images/mt_home_login_line2.jpg')  repeat-x ;  
+			height:34px;
+			background-color:#000
+		}
+		
+			
+			#login_title{
+					color:#FFFFFF;
+					font-weight:bold;
+					float:left;
+					padding-left:10px;
+					font-size:12px;
+			}
+		
+		
+			
+		/*Login Box*/
+		.login {
+			margin-left: 50px;
+			margin-top: -22px;
+			margin-right :25px;
+		}
+		
+		.login input {
+			background: url(images/login_button.jpg) no-repeat;
+			width: 55px;
+			height: 19px;
+			border:none;
+			color:#fff;
+			font-weight:bold;
+			text-transform:uppercase;
+			font-size:11px;
+			font-family:Verdana;
+			float:right;
+			padding-bottom:2px;
+			cursor:hand;
+			cursor:pointer;
+		}
+		
+		#login_box {
+			background: url(images/login_pattern.jpg) repeat-x;
+			_padding-top: 10px;
+			width: 202px;
+			_width: 203px;
+			height: 136px;
+			color: #000;
+			font-size: 10px;
+			font-family:Verdana;
+			border-right:1px #95C0DF solid;
+		}
+		
+		
+		#login_inside {
+			margin-left: 15px;
+			padding-top:10px;
+			_padding-top:0px;
+		}
+		
+		#login_box a {
+			color:#0056A4;
+			font-weight:bold;
+				font-size: 10px;
+		}
+		
+		.username {
+			width: 100px;
+			height: 19px;
+			padding-left: 5px;
+			border:1px  #3F7896 solid;
+			margin-bottom:3px;
+			margin-top:2px;
+		}
+		
+		.password {
+			border:1px  #3F7896 solid;
+			width: 100px;
+			height: 19px;
+			padding-left: 5px;
+			margin-bottom:3px;
+			margin-top:2px;
+		}
+		.remember {
+			margin-left:1px;
+			_margin-left:-3px;
+		
+		}
+		
+		.forgotten_password {
+			margin-left:0px;
+			_margin-top:-10px;
+			_margin-left:0px;
+		}
+			#signup_title{
+				background: url(images/sign_up1.jpg)  no-repeat;
+				height:41px;
+				width:203px;
+				border:0px #000 solid;
+					vertical-align:bottom;
+			}
+			.signup{
+				background: url(images/sign_up2.jpg)  no-repeat;
+				height:52px;
+				width:203px;
+				border:0px ;
+				vertical-align:top;
+				cursor:hand;
+				cursor:pointer;
+			}
+			#signup_inside {
+				_margin-top: -19px;
+				font-weight: bold;
+				vertical-align:top;
+			}
+				  /* Invite*/
+			#invite_title {
+				font: 12px Verdana; 
+				font-weight:bold ;
+				background: url(images/invite_friends2.jpg)  repeat-x;
+				color: #ffffff;
+			}
+			
+			#invite_jpg{
+				vertical-align:middle;
+				margin-right:10px;
+			}
+			
+			#invite_box {
+			
+				width: 203px;
+				/*height:237px;*/
+				color: #000;
+				font-size: 10px;
+				margin-top: -9px;
+				_margin-top: -20px;
+				margin-bottom: 0px;
+				background-color:#C5C5C5;
+				line-height:15px;
+			}
+		
+		#invite_forms {
+			vertical-align:top;
+			padding:15px;
+			padding-right:0px;
+			_padding-top:0px;
+			
+		}
+		.invite input {
+			background: url(images/login_button.jpg) no-repeat;
+			width: 55px;
+			height: 19px;
+			font-family:Verdana;
+			border:none;
+			color:#fff;
+			text-transform:uppercase;
+			font-weight:bold;	
+			font-size:11px;
+			padding-bottom:2px;
+			margin-top:5px;
+			margin-left:30px;
+			cursor:pointer;
+			cursor:hand;
+		}
+			#frname{
+				width:165px;
+			}
+			#fremail{
+				width:165px;
+			}
+			#inviter{
+				width:165px;
+			}
+			#mailer{
+				width:165px;
+			}
+			
+			INPUT{
+				border:1px  #3F7896 solid;
+			}
+			#rules1{
+				border:0;
+			}
+			#rules2{
+				border:0;
+			}
+			.remember{
+				border:0;
+			}
+			SELECT{
+				border:1px  #3F7896 solid;
+			}
+		/*BANNER*/
+			#banner_box {
+				width: 203px;
+				height:107px;
+				color: #fff;
+				font-size: 10px;
+				
+			}
+			#banner_header{
+				font: 12px Verdana; 
+				font-weight:bold ;
+				background: url(images/banner_header_pattern.jpg)  repeat-x;
+				color: #fff;
+			}
+			#banner_body{
+				height:75px;
+				background: url(images/banner_body_pattern.jpg)  repeat-x;
+			}
+			#content{
+				background-color:#95C0DF;
+				border-left:1px  #2D4058 solid;
+				height:600px;
+				font:12px Verdana;
+				padding:20 20 0 20;
+			}
+			
+			#content_td{
+				vertical-align:top;
+				background-color:#95C0DF;
+				
+		
+			}
+			.bold_text{
+				font-weight:bold;
+			}
+			.content_title{
+				background: url(images/content_title.jpg)  no-repeat;
+				padding-left:20px;
+				font-size:14px;
+				font-weight:bold;
+				margin-bottom:30px;
+			
+		
+			}
+			/*SIGN UP*/
+			h2 {
+				background: url(images/content_title.jpg)  no-repeat;
+				padding-left:20px;
+				font-size:14px;
+				font-weight:bold;
+				font-family:Verdana;
+				
+			
+			}
+			
+			th{
+				font-family:Verdana;
+				font-size:12px;
+				font-weight:bold;
+				padding:7px;
+				border-top:1px #0056A4 dotted;
+				text-align:right;
+				white-space: nowrap;
+			}
+		
+			input.submit_button{
+				background: url(images/submit_button.jpg) no-repeat;
+				width: 70px;
+				height: 19px;
+				border:none;
+				color:#fff;
+				font-weight:bold;
+				text-transform:uppercase;
+				font-size:11px;
+				font-family:Verdana;
+				float:right;
+				padding-bottom:2px;
+				cursor:hand;
+				cursor:pointer;
+				margin-right:250px;
+			}
+			
+			.specialtb{
+				font-family:Verdana;
+				font-size:10px;
+				font-weight:none;
+				color:#2D4058;
+				border-top:1px #0056A4 dotted;
+				white-space: nowrap;
+				padding:7px;
+				text-align:left;
+			}
+			
+			td.specialtb input{
+				width:170px;
+			}
+			
+			td.specialtb select{
+				width:170px;
+			}
+			
+			td.specialtb a{
+				color:#0056A4;
+				font-family:Verdana;
+				font-size:10px;
+				font-weight:none;
+			}
+			
+			table.specialtable {
+				empty-cells: show;
+				padding: 0px;
+				width:600px;
+				border-collapse: collapse;
+			}
+			
+			
+			a.content_link{
+				color:#0056A4;
+				font-weight:bold;
+				
+			}
+			/*INVITE*/
+			
+			table.specialtable table td.specialtb{
+				border-top:0px #0056A4 dotted;
+				text-align:right;
+			}
+			
+			table.specialtable table th{
+				border-top:0px #0056A4 dotted;
+				padding-left:4px;
+				padding-right:1px;
+				
+			}
+			input.invite_reset{
+				background: url(images/submit_button.jpg) no-repeat;
+				width: 70px;
+				height: 19px;
+				border:none;
+				color:#fff;
+				font-weight:bold;
+				text-transform:uppercase;
+				font-size:11px;
+				font-family:Verdana;
+				float:right;
+				padding-bottom:2px;
+				cursor:hand;
+				cursor:pointer;
+			}
+			
+			/*COPYRIGHTS*/
+			.copyright{
+				color:#95C0DF;
+				font-family: Tahoma;
+				font-weight:none
+			}
+			
+			.by{
+				color:#BFD9EC;
+			}
+			
+			#footer{
+				float:right;
+				font-size:10px;
+				font-family: Verdana;
+			}
+			#footer a{
+				color:#BFD9EC;
+			}
+			
+			 /*News*/
+		#news_box {
+			background:#BFD9EC;
+			height:150px;
+			color: #4b4b4b;
+			margin-top: 5px;
+			font-size: 12px;
+			padding-top: 15px;
+			margin-bottom:15px;
+			float: left;
+			vertical-align: top;
+		}
+		
+		#news_title {
+			background: url(images/news_cat.jpg) no-repeat;
+			padding-left:20px;
+			padding-top:1px;
+			color: #00194C;
+			font: 12px Verdana;
+			text-transform:uppercase;
+			font-weight: bold;
+			margin-left: 10px;
+			vertical-align:bottom
+		}
+		
+		#news_content {
+			height:100px;
+			overflow: auto;
+			margin-top: 10px;
+			margin-left: 15px;
+			font-size:11px;
+			font-family: Verdana;
+		}
+		 
+		#news_content  A{
+			color: #0056A4
+		}
+		/*F.A.Q.*/
+		.dotted_paragraph{
+			border-bottom:1px #0056A4 dotted;
+			font-size:12px;
+			font-family: Verdana;
+		}
+		
+		h3{
+			font-weight: bold;
+			font-size:12px;
+			font-family: Verdana;
+		}
+		.italic_text{
+			font-style:italic;
+			font-weight: bold;
+		}
+		
+		/*menu*/
+			ul#navigation {
+				margin:0px;
+				padding:0px;
+				list-style: none;
+				
+			}
+			#navigation  li {
+				
+				background-color:#000000;
+				float: left;
+				margin: 0;
+				position:relative; 
+			}
+			#navigation li a{
+				color: #fff;
+				font: 12px Verdana;
+				font-weight: bold;
+				text-decoration: none;
+				 height: 33px;
+				line-height: 2em;
+				float: left;
+				padding:0 20 0 20;
+				display: block;
+				text-align: center;
+				
+			}
+			#navigation li a:hover {
+				
+				background: url(images/mt_home_menu_item_bck_hover.jpg)  repeat-x ;
+				
+			}
+			/*submenu*/
+			
+			ul#navigation li:hover ul.submenu ,li.sub_over ul.submenu { 
+					display: block; }
+			ul.submenu {
+				margin: 0;
+				padding:0 0 0 0;
+				_padding-left:0;
+				list-style: none;
+				border-bottom: 1px yellow solid ;
+				display: none;
+				position: absolute;
+				left:0px;
+				top: 33px;
+				width: 150px;
+				background-color:#cc00cc;
+			}
+			ul.submenu li {
+				position: relative;
+				white-space: nowrap;
+			}
+			ul.submenu li ul {
+				list-style: none;
+				position: absolute;
+				left: 70px;
+				top: 0;
+				display: none;
+				white-space: nowrap;
+			}
+			ul.submenu li a {
+				display: block;
+				text-decoration: none;
+				color: #777;
+				background: #000;
+				padding: 5px;
+				border: 1px solid #ccc;
+				border-bottom: 0;
+			}
+			/* Fix IE. Hide from IE Mac \*/
+			* html ul.submenu li { float: left; height: 1%; }
+			* html ul.submenu li a { height: 1%; }
+			/* End */			
+			ul.submenu li:hover ul, li.over ul { 
+					display: block; }
+			/*AFTER LOGIN*/
+			#nrpg{
+				color:#000;
+				padding:10 0 20 10;
+				_padding-bottom:30px;
+				line-height:20px;
+			}
+			#nrpg_box {
+			/*	background: url(images/login_pattern.jpg) repeat-x;*/
+				background-color:#C2C2C2;
+				_padding-top: 10px;
+				width: 202px;
+				_width: 203px;
+				color: #000;
+				font-size: 10px;
+				font-family:Verdana;
+				border-right:1px #95C0DF solid;
+			}
+			#nrpg_team{
+					font: 12px Verdana; 
+					font-weight:bold ;
+					background: url(images/mt_nrpg_team_pattern.jpg)  repeat-x;
+					color: #ffffff;
+					width: 203px;
+					_width:202px;
+			}
+			/*AFTER LOGIN*/
+			table.after_login{
+			
+			}
+			table.specialtable_login{
+				background-color:#fff;
+			}
+			table.specialtable_login th{
+				background-color:#fff;
+				font: 11px Verdana; 
+				font-weight:bold ;
+				border:0;
+			}
+			table.specialtable_login th.tt{
+				background-color:#C6DDEE;
+				font: 11px Verdana; 
+				text-align:right;
+			}
+			table.specialtable_login td.tb{
+				background-color:#B1D7F2;
+				font: 11px Verdana; 
+				text-align:left;
+				border:0;
+			}
+			.powerbar {
+				height: 8px;
+				background: #0A0A0A url(powerbar_back.png) repeat-x scroll 0%;
+				border: 1px solid;
+				border-color: #777777 rgb(34, 34, 34) rgb(34, 34, 34) rgb(119, 119, 119);
+				margin: 2px 0px;
+			}
+			
+			.powerbarfill {
+				background-image: url(powerbar_fill.png);
+				height: 8px;
+				margin: 0px;
+				background-color: #7B481A;
+				font-size: 0pt /* IE */
+			}
+
+			

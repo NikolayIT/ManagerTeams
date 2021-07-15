@@ -1,0 +1,123 @@
+<?php
+/*******************************************************************************\
+*    IDE.PHP, a web based editor for quick PHP development                     *
+*    Copyright (C) 2000  Johan Ekenberg                                        *
+*                                                                              *
+*    This program is free software; you can redistribute it and/or modify      *
+*    it under the terms of the GNU General Public License as published by      *
+*    the Free Software Foundation; either version 2 of the License, or         *
+*    (at your option) any later version.                                       *
+*                                                                              *
+*    This program is distributed in the hope that it will be useful,           *
+*    but WITHOUT ANY WARRANTY; without even the implied warranty of            *
+*    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the             *
+*    GNU General Public License for more details.                              *
+*                                                                              *
+*    You should have received a copy of the GNU General Public License         *
+*    along with this program; if not, write to the Free Software               *
+*    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA *
+*                                                                              *
+*    To contact the author regarding this program,                             *
+*    please use this email address: <ide.php@ekenberg.se>                      *
+\*******************************************************************************/
+class Conf
+{
+   /* Public vars begin with Uppercase letter,
+   private vars all lowercase. */
+   var $Success_message_color		= "#119900";
+   var $Alert_message_color		= "#DD0000";
+   var $Fancy_line_number_color		= "#222222";
+   var $Conf_file			= "./admin/phpide/ide.php.conf";
+   var $Code_file			= "./admin/phpide/code_ide";	// Keeps the current code.
+   var $tmp_file_basename		= "./admin/phpide/tmp_ide";	// $this->$Eval_suffix get added here, forms $this->Tmp_file
+   var $Data_dir			= ".";
+   var $Curr_dir        = "./admin/phpide";
+   /* Option defaults go here */
+   var $Code_rows			= 25;
+   var $Code_cols			= 80;
+   var $Code_template			= "<HTML>\n<BODY BGCOLOR=\"#FFFFFF\">\n<?php\n\n?>\n</BODY>\n</HTML>";
+   var $Fancy_view_line_numbers		= 1;
+   var $Protect_entities		= 0;
+   var $Eval_suffix			= ".php";
+   var $Eval_suffix_list		= array(".php", ".html", ".shtml", ".cgi", ".jsp");
+   var $Eval_executable			= 0;		// Needed for .cgi etc.
+   var $Unix_newlines			= 0;		// For cgi on UNIX
+   /* Names of config options go in this array */
+   var $conf_var_names			= array('Code_rows', 'Code_cols',
+   'Code_template', 'Fancy_view_line_numbers',
+   'Protect_entities', 'Eval_suffix', 'Eval_suffix_list',
+   'Eval_executable', 'Unix_newlines', 'Http_auth_username',
+   'Http_auth_password');
+   /* Other vars */
+   var $Tmp_file, $Current_file, $Default_suffix, $saved_conf_array;
+   function Conf()
+   {
+      $this->init_vars();
+      $this->Tmp_file = $this->tmp_file_basename . $this->Eval_suffix;
+      sort($this->Eval_suffix_list);
+   }
+   function init_vars()
+   {
+      global $HTTP_POST_VARS;
+      $this->saved_conf_array = $this->get_saved_conf_array();
+      while (list(,$var_name) = each($this->conf_var_names))
+      {
+         if (isset($HTTP_POST_VARS[$var_name])) {
+            $this->$var_name = $HTTP_POST_VARS[$var_name];
+         }
+         elseif(isset($this->saved_conf_array[$var_name]))
+         {
+            $this->$var_name = $this->saved_conf_array[$var_name];
+         }
+      }
+   }
+
+   function save_to_file($var_names = array())
+   {
+      if (! sizeof($var_names))
+      {	// No arg =
+         $var_names = $this->conf_var_names;		// save everything
+      }
+      $save_to_file_array = $this->saved_conf_array;
+      while (list(,$name) = each($var_names))
+      {
+         if (isset($this->$name))
+         {
+            $save_to_file_array[$name] = $this->$name;
+         }
+      }
+      $CONF_FILE = fopen($this->Conf_file, "w");
+      fputs ($CONF_FILE, serialize($save_to_file_array));
+      fclose ($CONF_FILE);
+   }
+   function get_saved_conf_array()
+   {
+      if (! file_exists($this->Conf_file)) return false;
+      $CF = fopen($this->Conf_file, "r");
+      $saved_conf_array = unserialize(fread($CF, filesize($this->Conf_file)));
+      fclose ($CF);
+      return ($saved_conf_array);
+   }
+   function get_saved_value($var)
+   {
+      return($this->saved_conf_array[$var]);
+   }
+   function is_bad_environment()
+   {
+      $error = "";
+      if (! (file_exists($this->Data_dir) || mkdir($this->Data_dir, 0705)))
+      {
+         $error = "Directory {$this->Data_dir} doesn't exist and can not be created!<BR>Possibly wrong permissions for the Ide.php directory?? (chmod 777)";      
+      }
+      elseif (!(is_writeable($this->Data_dir) && is_readable($this->Data_dir)))
+      {
+         $error = "Directory {$this->Data_dir} has incorrect permissions!<BR>PHP needs both read and write access to this directory! (chmod 777)";      
+      }
+      elseif (!is_writeable($this->Curr_dir))
+      {
+         $error = "The Ide.php directory (current directory) has incorrect permissions!<BR>PHP needs both read and write access to this directory! (chmod 777)";      
+      }
+      return $error;
+   }
+}
+?>
